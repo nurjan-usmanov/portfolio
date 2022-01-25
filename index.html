@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <script src="https://kit.fontawesome.com/89f3b019bb.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="./index.html">aqniet<span style="color: red;"><b>.uz</b></span></a></div>
+        <nav class="nav_btns" id="nav_btns">
+            <ul class="nav_b">
+                <li><a href="#home" onclick="menu()"><b>HOME</b></a></li>
+                <li><a href="#about" onclick="menu()"><b>ABOUT</b></a></li>
+                <li><a href="#skills" onclick="menu()"><b>SKILLS</b></a></li>
+                <li><a href="#contact" onclick="menu()"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div class="menu_btn" onclick="menu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="home" id="home">
+            <h1>Hello, I am</br>Usmanov Nurjan</h1>
+            <h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis earum illo omnis a dolorum deleniti.
+            </h3>
+            <button>See more</button>
+        </div>
+
+        <div class="about" id="about">
+            <h2 style="font-size: 36px;">About me</h2>
+            <div class="about_container">
+                <div class="about_text">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos iure optio temporibus explicabo corrupti libero minus, aliquam, culpa necessitatibus provident, odit alias consequatur non asperiores facilis nam fuga ex repellat sequi maxime. Aliquam deserunt accusamus natus, itaque delectus ipsa eveniet omnis earum velit aliquid enim dignissimos! Doloribus similique.
+                    </p>
+
+                    <p>Lorem ipsum dolor sit.</p>
+
+                    <div class="nav_icons">
+                        <i class="fab fa-instagram"></i><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i>
+                    </div>
+
+                    <button class="btn_about">Learn more</button>
+                </div>
+                <div class="img">
+                    <img height="100%" src="./imags/happy-young-businessman.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+        </div>  
+
+    </main>
+
+    <footer>
+        <h3>USMANOV NURJAN</h3>
+        <div><i class="fab fa-facebook-square"></i><i class="fab fa-instagram-square"></i><i class="fab fa-telegram"></i></div>
+        <p>&#169;Konimex2022</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+
+    <div class="bg_fixed"></div>
+
+    <div id="scroll_top" class="scroll_top scroll_active">
+        <a href="#home">
+            <div class="scroll_top_btn"></div>
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

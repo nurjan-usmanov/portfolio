@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Roboto:wght@100&family=Sarabun:wght@100&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Sarabun', sans-serif;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ---H--E--A--D--E--R--- */
+header{
+    width: 100%;
+    height: 50px;
+    background: #012345;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 2px solid red;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.5);
+}
+.logo a{
+    color: #fff;
+    font-size: 34px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav_btns{
+    margin-right: 30px;
+    width: 500px;
+}
+.nav_b{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav_b a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    position: relative;
+    padding: 5px;
+    transition: 0.3s;
+}
+.nav_b a:hover{
+    color: red;
+}
+.menu_btn{
+    width: 50px;
+    height: 50px;
+    /* z-index: 2000; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.menu_btn{
+    display: none;
+}
+
+/* ---H--E--A--D--E--R--- */
+
+/* ---H--O--M--E--- */
+
+.home{
+    position: relative;
+    width: 80%;
+    height: 90vh;
+    padding: 10vh 10% 0 10%;
+    z-index: 10;
+}
+.home h3{
+    width: 45%;
+}
+button{
+    width: 120px;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgb(180, 180, 180);
+}
+button:hover{
+    background: rgb(192, 0, 0);
+}
+
+/* ---H--O--M--E--- */
+
+/* ---A--B--O--U--T--- */
+.about{
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    background: linear-gradient(-36deg, rgb(235, 240, 255) 40%, #fff 0%);
+    padding: 10vh 10%;
+    z-index: 10;
+}
+.about .about_container{
+    position: relative;
+    width: 100%;
+    height: 63vh;
+    /* background: grey; */
+    display: flex;
+    justify-content: space-between;
+}
+.about .about_container .about_text{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 500px;
+}
+.about .about_container .about_text p{
+    margin-top: 0;
+    padding-right: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.about .about_container .about_text .fab{
+    font-size: 24px;
+    margin-right: 20px;
+    color: rgb(14, 156, 204);
+    text-shadow: 1px 1px 3px grey;
+}
+.btn_about{
+    margin-top: 20px;
+}
+.about .about_container .img{
+    /* position: relative; */
+    top: 0;
+    right: 0;
+    width: 343px;
+}
+/* ---A--B--O--U--T--- */
+
+/* ---S--K--I--L--L--S--- */
+.skills{
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    padding: 10vh 10%;
+    z-index: 10;
+}
+/* ---S--K--I--L--L--S--- */
+
+/* ---C--O--N--T--A--C--T--- */
+.contact{
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    background: rgb(255, 186, 246);
+    padding: 10vh 10%;
+    z-index: 10;
+}
+/* ---C--O--N--T--A--C--T--- */
+
+/* ---F--O--O--T--E--R--- */
+footer{
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    background: #000033;
+    z-index: 10;
+}
+footer h3{
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+footer .fab{
+    font-size: 24px;
+    margin: 15px;
+}
+/* ---F--O--O--T--E--R--- */
+
+/* ---S-C-R-O-L-L--T-O-P--- */
+.scroll_top_btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: red;
+    box-shadow: 2px 2px 3px rgb(114, 114, 114, 0.9);
+    z-index: 1001;
+}
+.scroll_top_btn::after{
+    content: '';
+    position: absolute;
+    /* position: relative; */
+    bottom: 20px;
+    right: 3px;
+    transform: rotateZ(35deg);
+    width: 20px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    z-index: 1002;
+}
+.scroll_top_btn::before{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 17px;
+    transform: rotateZ(-35deg);
+    width: 20px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    z-index: 1003;
+}
+.scroll_active{
+    display: none;
+}
+/* ---S-C-R-O-L-L--T-O-P--- */
+
+/* ---B-G--F-I-X-E-D--- */
+.bg_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background: url(./imags/paper-pencil-work-touch-business-usb.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.bg_2{
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0; */
+    background: url(./imags/paper-pencil-work-touch-business-usb.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.bg_1{
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0; */
+    background: url(./imags/office-table.jpg);
+    background-size: cover;
+    background-position: right;
+}
+/* ---B-G--F-I-X-E-D--- */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* ---H--E--A--D--E--R--- */
+    .nav_b{
+        display: none;
+    }
+    .menu_btn{
+        display: flex;
+        cursor: pointer;
+    }
+    .fas{
+        color: #fff;
+        font-size: 32px;
+    }
+    .active{
+        position: absolute;
+        margin-top: 60px;
+        width: 100%;
+        height: 100vh;
+        background: cadetblue;
+    }
+    .nav_btns.active .nav_b{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        padding-left: 0px;
+    }
+    .nav_btns.active .nav_b li{
+        margin-top: 50px;
+    }
+    /* ---H--E--A--D--E--R--- */
+
+    /* ---H--O--M--E--- */
+    .home h3{
+        width: 60%;
+    }
+    .home button{
+        width: 120px;
+        height: 30px;
+        border-radius: 0;
+        border: none;
+        background: red;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 2px 2px 3px rgb(180, 180, 180);
+    }
+    .home button:hover{
+        background: rgb(192, 0, 0);
+    }
+    /* ---H--O--M--E--- */
+
+       /* ---A--B--O--U--T--- */
+       .about{
+        height: 90vh;
+        padding-bottom: 0;
+    }
+    .about .about_container{
+        /* position: relative; */
+        /* width: 100%; */
+        height: 80vh;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .about .about_container .about_text{
+        /* position: absolute; */
+        /* top: 0; */
+        /* left: 0; */
+        width: 100%;
+    }
+    .about .about_container .about_text p{
+        /* margin-top: 0; */
+        padding-right: 0px;
+        font-size: 14px;
+        /* text-align: justify; */
+    }
+    .about .about_container .about_text .fab{
+        /* font-size: 24px; */
+        margin-right: 15px;
+        margin-left: 15px;
+        /* color: rgb(14, 156, 204); */
+        /* text-shadow: 1px 1px 3px grey; */
+    }
+    .btn_about{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .about .about_container .img{
+        /* position: relative; */
+        /* top: 0; */
+        /* right: 0; */
+        width: 180px;
+        height: 180px;
+        /* text-align: center; */
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .about .about_container .img img{
+        width: 100%;
+        height: auto;
+    }
+    /* ---A--B--O--U--T--- */
+
+
+
+
+
+
+    /* ---B-G--F-I-X-E-D--- */
+    .bg_fixed{
+        /* position: fixed; */
+        /* top: 0; */
+        /* left: 0; */
+        /* width: 100%; */
+        /* height: 100vh; */
+        /* z-index: 0; */
+        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
+        /* background-size: cover; */
+        /* background-position: right; */
+    }
+    .bg_2{
+        /* position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 0; */
+        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
+        /* background-size: cover; */
+        /* background-position: right; */
+    }
+    .bg_1{
+        /* position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 0; */
+        background: url(./imags/office-table-small.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+/* ---B-G--F-I-X-E-D--- */
+}
+
+
+
+@media (max-width: 575.98px) { 
+    /* ---H--E--A--D--E--R--- */
+    .nav_b{
+        display: none;
+    }
+    .menu_btn{
+        display: flex;
+        cursor: pointer;
+    }
+    .fas{
+        color: #fff;
+        font-size: 32px;
+    }
+    .menu_btn{
+        cursor: pointer;
+    }
+    .active{
+        position: absolute;
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
+        background: cadetblue;
+    }
+    .nav_btns.active .nav_b{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        padding-left: 0px;
+    }
+    .nav_btns.active .nav_b li{
+        margin-top: 50px;
+    }
+    /* ---H--E--A--D--E--R--- */
+
+    /* ---H--O--M--E--- */
+    .home{
+        width: 90%;
+        height: 90vh;
+        padding: 10vh 5% 0 5%;
+        text-align: center;
+    }
+    .home h1{
+        text-align: center;
+        margin-top: 200px;
+        background: rgb(255, 255, 255, 0.95);
+    }
+    .home h3{
+        width: 100%;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+    .home button{
+        /* width: 120px; */
+        /* height: 30px; */
+        /* border-radius: 0; */
+        /* border: none; */
+        /* background: red; */
+        /* color: #fff; */
+        /* font-weight: bold; */
+        /* letter-spacing: 1px; */
+        /* font-size: 16px; */
+        /* cursor: pointer; */
+        /* box-shadow: 2px 2px 3px rgb(180, 180, 180); */
+    }
+    .home button:hover{
+        /* background: rgb(192, 0, 0); */
+    }
+    /* ---H--O--M--E--- */
+
+    /* ---A--B--O--U--T--- */
+    .about{
+        height: 90vh;
+        padding-bottom: 0;
+    }
+    .about .about_container{
+        /* position: relative; */
+        /* width: 100%; */
+        height: 80vh;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .about .about_container .about_text{
+        /* position: absolute; */
+        /* top: 0; */
+        /* left: 0; */
+        width: 100%;
+    }
+    .about .about_container .about_text p{
+        /* margin-top: 0; */
+        padding-right: 0px;
+        font-size: 14px;
+        /* text-align: justify; */
+    }
+    .about .about_container .about_text .fab{
+        /* font-size: 24px; */
+        margin-right: 15px;
+        margin-left: 15px;
+        /* color: rgb(14, 156, 204); */
+        /* text-shadow: 1px 1px 3px grey; */
+    }
+    .btn_about{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .about .about_container .img{
+        /* position: relative; */
+        /* top: 0; */
+        /* right: 0; */
+        width: 180px;
+        height: 180px;
+        /* text-align: center; */
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .about .about_container .img img{
+        width: 100%;
+        height: auto;
+    }
+    /* ---A--B--O--U--T--- */
+
+
+
+
+
+
+    /* ---B-G--F-I-X-E-D--- */
+    .bg_fixed{
+        /* position: fixed; */
+        /* top: 0; */
+        /* left: 0; */
+        /* width: 100%; */
+        /* height: 100vh; */
+        /* z-index: 0; */
+        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
+        /* background-size: cover; */
+        /* background-position: right; */
+    }
+    .bg_2{
+        /* position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 0; */
+        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
+        /* background-size: cover; */
+        /* background-position: right; */
+    }
+    .bg_1{
+        /* position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 0; */
+        background: url(./imags/office-table-small.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+/* ---B-G--F-I-X-E-D--- */
+ }
