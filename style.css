@@ -98,7 +98,7 @@ button:hover{
 /* ---H--O--M--E--- */
 
 /* ---A--B--O--U--T--- */
-.about{
+.bg_move{
     position: relative;
     width: 80%;
     height: 80vh;
@@ -106,7 +106,7 @@ button:hover{
     padding: 10vh 10%;
     z-index: 10;
 }
-.about .about_container{
+.about_container{
     position: relative;
     width: 100%;
     height: 63vh;
@@ -114,19 +114,19 @@ button:hover{
     display: flex;
     justify-content: space-between;
 }
-.about .about_container .about_text{
+.about_container .about_text{
     /* position: absolute; */
     top: 0;
     left: 0;
     width: 500px;
 }
-.about .about_container .about_text p{
+.about_container .about_text p{
     margin-top: 0;
     padding-right: 20px;
     font-size: 18px;
     text-align: justify;
 }
-.about .about_container .about_text .fab{
+.about_container .about_text .fab{
     font-size: 24px;
     margin-right: 20px;
     color: rgb(14, 156, 204);
@@ -135,7 +135,7 @@ button:hover{
 .btn_about{
     margin-top: 20px;
 }
-.about .about_container .img{
+.about_container .img{
     /* position: relative; */
     top: 0;
     right: 0;
@@ -144,6 +144,10 @@ button:hover{
 /* ---A--B--O--U--T--- */
 
 /* ---S--K--I--L--L--S--- */
+main h2{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 .skills{
     position: relative;
     width: 80%;
@@ -151,17 +155,104 @@ button:hover{
     padding: 10vh 10%;
     z-index: 10;
 }
+.skills_box{
+    width: 100%;
+    /* background: darkorange; */
+    display: flex;
+    justify-content: space-between
+}
+.skills_card{
+    margin: 0;
+    width: 300px;
+    height: 440px;
+    background: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 7px grey;
+    color: white;
+    text-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+.skills_card img{
+    margin: 15px 10% 0px 10%;
+}
+.skills_card h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+.skills_card p{
+    margin: 5px 10px 15px 10px;
+    text-align: center;
+}
+.skills_card .stars{
+display: flex;
+justify-content: center;
+}
+.skills_card .fas{
+    font-size: 22px;
+    margin: 3px;
+    text-shadow: 0 0 6px rgb(0, 0, 0, 0.4);
+}
+.skills_card .gold{
+    color: gold;   
+}
+
 /* ---S--K--I--L--L--S--- */
 
 /* ---C--O--N--T--A--C--T--- */
-.contact{
-    position: relative;
-    width: 80%;
-    height: 80vh;
-    background: rgb(255, 186, 246);
-    padding: 10vh 10%;
-    z-index: 10;
+span{
+    color: dodgerblue;
+    font-weight: bold;
 }
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #012345;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 15px;
+}
+.contact.bg_move{
+    /* position: relative;
+    width: 80%;
+    height: 80vh; */
+    background: linear-gradient(-36deg, rgb(245, 255, 207) 40%, #fff 0%);
+    /* padding: 10vh 10%;
+    z-index: 10;*/
+} 
+.contact{
+    /* position: relative; */
+    /* width: 80%; */
+    height: 75vh;
+    /* background: rgb(255, 186, 246); */
+    /* padding: 10vh 10%; */
+    /* z-index: 10; */
+}
+.cont_box{
+    margin-top: 15px;
+    display: flex;
+}
+.contact_container{
+    position: relative;
+    width: 100%;
+    height: 63vh;
+    /* background: grey; */
+    display: flex;
+    justify-content: space-between;
+}
+.contact_container .img{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 370px;
+    /* background: crimson; */
+}
+
 /* ---C--O--N--T--A--C--T--- */
 
 /* ---F--O--O--T--E--R--- */
@@ -368,6 +459,31 @@ footer .fab{
     }
     /* ---A--B--O--U--T--- */
 
+    /* ---S--K--I--L--L--S--- */
+    .skills{
+        /* position: relative; */
+        width: 90%;
+        height: 940px;
+        padding: 10vh 5%;
+        /* z-index: 10; */
+    }
+    .skills_box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .skills_card{
+        margin: 10px 0 30px 0;
+        width: 250px;
+        height: 415px;
+        background: rgb(255, 255, 255, 0.3);
+        backdrop-filter: blur(4px);
+        box-shadow: 0px 0px 7px grey;
+        color: white;
+        text-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+        font-weight: 800;
+    }
 
 
 
@@ -413,6 +529,12 @@ footer .fab{
 
 
 @media (max-width: 575.98px) { 
+
+    main h2{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     /* ---H--E--A--D--E--R--- */
     .nav_b{
         display: none;
@@ -493,10 +615,6 @@ footer .fab{
         flex-direction: column-reverse;
         text-align: center;
     }
-    .about h2{
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
     .about .about_container .about_text{
         /* position: absolute; */
         /* top: 0; */
@@ -538,7 +656,101 @@ footer .fab{
     /* ---A--B--O--U--T--- */
 
 
+    /* ---S--K--I--L--L--S--- */
+    .skills{
+        /* position: relative; */
+        /* width: 80%; */
+        height: 1500px;
+        /* padding: 10vh 10%; */
+        /* z-index: 10; */
+    }
+    .skills_box{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .skills_card{
+        margin: 20px 0 40px 0;
+        /* width: 300px;
+        height: 440px;
+        background: rgb(255, 255, 255, 0.3);
+        backdrop-filter: blur(4px);
+        box-shadow: 0px 0px 7px grey;
+        color: white;
+        text-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+        font-weight: 800; */
+    }
+    /* .skills_card img{
+        margin: 15px 10% 0px 10%;
+    }
+    .skills_card h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .skills_card p{
+        margin: 5px 10px 15px 10px;
+        text-align: center;
+    }
+    .skills_card .stars{
+    display: flex;
+    justify-content: center;
+    }
+    .skills_card .fas{
+        font-size: 22px;
+        margin: 3px;
+        text-shadow: 0 0 6px rgb(0, 0, 0, 0.4);
+    }
+    .skills_card .gold{
+        color: gold;
+        
+    } */
 
+    /* ---S--K--I--L--L--S--- */
+
+    /* ---C--O--N--T--A--C--T--- */
+    .icon{
+        margin-top: 16px;
+    }
+    .contact{
+        /* position: relative; */
+        /* width: 80%; */
+        height: 90vh;
+        /* background: rgb(255, 186, 246); */
+        /* padding: 10vh 10%; */
+        /* z-index: 10; */
+    }
+    .contact_container{
+        height: 81vh;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column-reverse;
+        /* background: chartreuse; */
+    }
+    .contact_container .img{
+        top: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: -20px;
+        /* background: crimson; */
+    }
+    .contact_container img{
+        width: 70%;
+        /* background: coral; */
+    }
+    .cont_box{
+        margin-top: 0px;
+        display: flex;
+        /* background: coral; */
+    }
+    .btn_box{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+/* ---C--O--N--T--A--C--T--- */
 
 
 
