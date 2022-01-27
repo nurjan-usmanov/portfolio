@@ -10,6 +10,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
 /* ---H--E--A--D--E--R--- */
 header{
     width: 100%;
@@ -52,7 +53,6 @@ header{
 .menu_btn{
     width: 50px;
     height: 50px;
-    /* z-index: 2000; */
     position: absolute;
     top: 0;
     right: 0;
@@ -63,11 +63,9 @@ header{
 .menu_btn{
     display: none;
 }
-
 /* ---H--E--A--D--E--R--- */
 
 /* ---H--O--M--E--- */
-
 .home{
     position: relative;
     width: 80%;
@@ -110,12 +108,10 @@ button:hover{
     position: relative;
     width: 100%;
     height: 63vh;
-    /* background: grey; */
     display: flex;
     justify-content: space-between;
 }
 .about_container .about_text{
-    /* position: absolute; */
     top: 0;
     left: 0;
     width: 500px;
@@ -136,7 +132,6 @@ button:hover{
     margin-top: 20px;
 }
 .about_container .img{
-    /* position: relative; */
     top: 0;
     right: 0;
     width: 343px;
@@ -157,7 +152,6 @@ main h2{
 }
 .skills_box{
     width: 100%;
-    /* background: darkorange; */
     display: flex;
     justify-content: space-between
 }
@@ -197,7 +191,6 @@ justify-content: center;
 .skills_card .gold{
     color: gold;   
 }
-
 /* ---S--K--I--L--L--S--- */
 
 /* ---C--O--N--T--A--C--T--- */
@@ -218,20 +211,10 @@ span{
     margin-right: 15px;
 }
 .contact.bg_move{
-    /* position: relative;
-    width: 80%;
-    height: 80vh; */
     background: linear-gradient(-36deg, rgb(245, 255, 207) 40%, #fff 0%);
-    /* padding: 10vh 10%;
-    z-index: 10;*/
 } 
 .contact{
-    /* position: relative; */
-    /* width: 80%; */
     height: 75vh;
-    /* background: rgb(255, 186, 246); */
-    /* padding: 10vh 10%; */
-    /* z-index: 10; */
 }
 .cont_box{
     margin-top: 15px;
@@ -241,7 +224,6 @@ span{
     position: relative;
     width: 100%;
     height: 63vh;
-    /* background: grey; */
     display: flex;
     justify-content: space-between;
 }
@@ -250,7 +232,6 @@ span{
     top: 0;
     right: 0;
     width: 370px;
-    /* background: crimson; */
 }
 
 /* ---C--O--N--T--A--C--T--- */
@@ -288,7 +269,6 @@ footer .fab{
 .scroll_top_btn::after{
     content: '';
     position: absolute;
-    /* position: relative; */
     bottom: 20px;
     right: 3px;
     transform: rotateZ(35deg);
@@ -326,23 +306,11 @@ footer .fab{
     background-position: right;
 }
 .bg_2{
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 0; */
     background: url(./imags/paper-pencil-work-touch-business-usb.jpg);
     background-size: cover;
     background-position: right;
 }
 .bg_1{
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 0; */
     background: url(./imags/office-table.jpg);
     background-size: cover;
     background-position: right;
@@ -403,14 +371,12 @@ footer .fab{
     }
     /* ---H--O--M--E--- */
 
-       /* ---A--B--O--U--T--- */
-       .about{
+    /* ---A--B--O--U--T--- */
+    .about{
         height: 90vh;
         padding-bottom: 0;
     }
     .about .about_container{
-        /* position: relative; */
-        /* width: 100%; */
         height: 80vh;
         flex-direction: column-reverse;
         text-align: center;
@@ -420,35 +386,23 @@ footer .fab{
         margin-bottom: 10px;
     }
     .about .about_container .about_text{
-        /* position: absolute; */
-        /* top: 0; */
-        /* left: 0; */
         width: 100%;
     }
     .about .about_container .about_text p{
-        /* margin-top: 0; */
         padding-right: 0px;
         font-size: 14px;
-        /* text-align: justify; */
     }
     .about .about_container .about_text .fab{
-        /* font-size: 24px; */
         margin-right: 15px;
         margin-left: 15px;
-        /* color: rgb(14, 156, 204); */
-        /* text-shadow: 1px 1px 3px grey; */
     }
     .btn_about{
         margin-top: 15px;
         margin-bottom: 15px;
     }
     .about .about_container .img{
-        /* position: relative; */
-        /* top: 0; */
-        /* right: 0; */
         width: 180px;
         height: 180px;
-        /* text-align: center; */
         overflow: hidden;
         border-radius: 50%;
         margin: auto;
@@ -461,11 +415,9 @@ footer .fab{
 
     /* ---S--K--I--L--L--S--- */
     .skills{
-        /* position: relative; */
         width: 90%;
         height: 940px;
         padding: 10vh 5%;
-        /* z-index: 10; */
     }
     .skills_box{
         display: flex;
@@ -484,48 +436,15 @@ footer .fab{
         text-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
         font-weight: 800;
     }
-
-
-
-
-
+    /* ---S--K--I--L--L--S--- */
     /* ---B-G--F-I-X-E-D--- */
-    .bg_fixed{
-        /* position: fixed; */
-        /* top: 0; */
-        /* left: 0; */
-        /* width: 100%; */
-        /* height: 100vh; */
-        /* z-index: 0; */
-        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
-        /* background-size: cover; */
-        /* background-position: right; */
-    }
-    .bg_2{
-        /* position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 0; */
-        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
-        /* background-size: cover; */
-        /* background-position: right; */
-    }
     .bg_1{
-        /* position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 0; */
         background: url(./imags/office-table-small.jpg);
         background-size: cover;
         background-position: center;
     }
-/* ---B-G--F-I-X-E-D--- */
+    /* ---B-G--F-I-X-E-D--- */
 }
-
 
 
 @media (max-width: 575.98px) { 
@@ -585,22 +504,6 @@ footer .fab{
         text-align: center;
         text-shadow: 0px 0px 10px rgb(255, 255, 255);
     }
-    .home button{
-        /* width: 120px; */
-        /* height: 30px; */
-        /* border-radius: 0; */
-        /* border: none; */
-        /* background: red; */
-        /* color: #fff; */
-        /* font-weight: bold; */
-        /* letter-spacing: 1px; */
-        /* font-size: 16px; */
-        /* cursor: pointer; */
-        /* box-shadow: 2px 2px 3px rgb(180, 180, 180); */
-    }
-    .home button:hover{
-        /* background: rgb(192, 0, 0); */
-    }
     /* ---H--O--M--E--- */
 
     /* ---A--B--O--U--T--- */
@@ -609,42 +512,28 @@ footer .fab{
         padding-bottom: 0;
     }
     .about .about_container{
-        /* position: relative; */
-        /* width: 100%; */
         height: 80vh;
         flex-direction: column-reverse;
         text-align: center;
     }
     .about .about_container .about_text{
-        /* position: absolute; */
-        /* top: 0; */
-        /* left: 0; */
         width: 100%;
     }
     .about .about_container .about_text p{
-        /* margin-top: 0; */
         padding-right: 0px;
         font-size: 14px;
-        /* text-align: justify; */
     }
     .about .about_container .about_text .fab{
-        /* font-size: 24px; */
         margin-right: 15px;
         margin-left: 15px;
-        /* color: rgb(14, 156, 204); */
-        /* text-shadow: 1px 1px 3px grey; */
     }
     .btn_about{
         margin-top: 15px;
         margin-bottom: 15px;
     }
     .about .about_container .img{
-        /* position: relative; */
-        /* top: 0; */
-        /* right: 0; */
         width: 180px;
         height: 180px;
-        /* text-align: center; */
         overflow: hidden;
         border-radius: 50%;
         margin: auto;
@@ -655,14 +544,9 @@ footer .fab{
     }
     /* ---A--B--O--U--T--- */
 
-
     /* ---S--K--I--L--L--S--- */
     .skills{
-        /* position: relative; */
-        /* width: 80%; */
         height: 1500px;
-        /* padding: 10vh 10%; */
-        /* z-index: 10; */
     }
     .skills_box{
         display: flex;
@@ -671,42 +555,7 @@ footer .fab{
     }
     .skills_card{
         margin: 20px 0 40px 0;
-        /* width: 300px;
-        height: 440px;
-        background: rgb(255, 255, 255, 0.3);
-        backdrop-filter: blur(4px);
-        box-shadow: 0px 0px 7px grey;
-        color: white;
-        text-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
-        font-weight: 800; */
     }
-    /* .skills_card img{
-        margin: 15px 10% 0px 10%;
-    }
-    .skills_card h3{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        text-align: center;
-        font-size: 30px;
-    }
-    .skills_card p{
-        margin: 5px 10px 15px 10px;
-        text-align: center;
-    }
-    .skills_card .stars{
-    display: flex;
-    justify-content: center;
-    }
-    .skills_card .fas{
-        font-size: 22px;
-        margin: 3px;
-        text-shadow: 0 0 6px rgb(0, 0, 0, 0.4);
-    }
-    .skills_card .gold{
-        color: gold;
-        
-    } */
-
     /* ---S--K--I--L--L--S--- */
 
     /* ---C--O--N--T--A--C--T--- */
@@ -714,12 +563,7 @@ footer .fab{
         margin-top: 16px;
     }
     .contact{
-        /* position: relative; */
-        /* width: 80%; */
         height: 90vh;
-        /* background: rgb(255, 186, 246); */
-        /* padding: 10vh 10%; */
-        /* z-index: 10; */
     }
     .contact_container{
         height: 81vh;
@@ -727,66 +571,31 @@ footer .fab{
         display: flex;
         flex-flow: column;
         flex-direction: column-reverse;
-        /* background: chartreuse; */
     }
     .contact_container .img{
         top: 0;
         width: 100%;
         text-align: center;
         margin-bottom: -20px;
-        /* background: crimson; */
     }
     .contact_container img{
         width: 70%;
-        /* background: coral; */
     }
     .cont_box{
         margin-top: 0px;
         display: flex;
-        /* background: coral; */
     }
     .btn_box{
         margin-top: 10px;
         text-align: center;
     }
-
-/* ---C--O--N--T--A--C--T--- */
-
-
+    /* ---C--O--N--T--A--C--T--- */
 
     /* ---B-G--F-I-X-E-D--- */
-    .bg_fixed{
-        /* position: fixed; */
-        /* top: 0; */
-        /* left: 0; */
-        /* width: 100%; */
-        /* height: 100vh; */
-        /* z-index: 0; */
-        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
-        /* background-size: cover; */
-        /* background-position: right; */
-    }
-    .bg_2{
-        /* position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 0; */
-        /* background: url(./imags/paper-pencil-work-touch-business-usb.jpg); */
-        /* background-size: cover; */
-        /* background-position: right; */
-    }
     .bg_1{
-        /* position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 0; */
         background: url(./imags/office-table-small.jpg);
         background-size: cover;
         background-position: center;
     }
-/* ---B-G--F-I-X-E-D--- */
+    /* ---B-G--F-I-X-E-D--- */
  }

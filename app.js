@@ -24,7 +24,3 @@ window.addEventListener('scroll', () => {
         bgFixed.classList.add('bg_2');
     }
 })
-
-// window.addEventListener('scroll', () => {
-
-// })
